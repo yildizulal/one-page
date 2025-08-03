@@ -105,6 +105,7 @@ h1,h2,h4{
 .about-description{
     font-size: 1rem;
     font-weight: 500;
+    font-family : var(--body-font);
 }
 
 .about-buttons{
@@ -218,4 +219,5 @@ h1,h2,h4{
     .home-part-2{
         width: 100%;
     }
+
 }
