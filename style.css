@@ -1,0 +1,221 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Mozilla+Headline:wdth,wght@87.5,500&display=swap');
+
+:root{
+    --body-font: "Montserrat", sans-serif;
+    --second-font:"Mozilla Headline", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h4{
+    font-family:"Mozilla Headline", sans-serif;
+}
+ 
+.home{
+    width: 100%;
+    height: 100vh;
+    padding: 0rem 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.home-part-1{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.home-image{
+    width: 250px;
+}
+
+.home-title{
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+}
+
+.home-job{
+    font-size: 1.75rem;
+    font-family: var(--body-font)
+}
+
+.home-social{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.home-social-link{
+    font-size: 2.5rem;
+    color: black;
+    transition: .4s;
+}
+
+.home-social-link:hover{
+    transform: translateY(-.25rem);
+}
+
+.home-part-2{
+    background-color: lightgrey;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 9rem;
+}
+
+.home-about{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 80%;
+}
+
+.about-title{
+    font-size: 3.5rem;
+}
+
+.about-description{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.about-buttons{
+    display: flex;
+    column-gap: 2rem;
+}
+
+
+/* BUTTON */
+.button{
+    background-color: black;
+    color: white;
+    padding: .5rem;
+    font-size: 1.5rem;
+    width: 15rem;
+    text-align: center;
+    font-family: var(--body-font);
+    transition: all .3s ease;
+}
+
+.button:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: translateY(-.25rem);
+}
+
+@media screen and (max-width:1300px) {
+    .home{
+        padding: 0rem 4rem;
+    }
+
+    .button{
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .home{
+        padding: 0;
+    }
+
+    .home-title{
+        font-size: 3rem;
+    }
+
+    .home-job{
+        font-size: 1.5rem;
+    }
+
+    .home-part-2{
+        gap: 8rem;
+    }
+}
+
+@media screen and (max-width:800px){
+    .home-part-1{
+        row-gap: 0;
+    }
+
+    .home-title{
+        font-size: 2rem;
+    }
+
+    .home-job{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-part-1 .button{
+        margin-bottom: 1rem;
+    }
+
+    .home-social-link{
+        font-size: 2rem;
+    }
+
+    .home-part-2{
+        gap: 3rem;
+    }
+
+    .home-about{
+        gap: 2rem;
+    }
+
+    .about-title{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .home{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .home-part-1{
+        width: 100%;
+        height: max-content;
+        gap: .5rem;
+    }
+
+    .home-image{
+        width: 100%;
+    }
+
+    .button{
+        width: 8rem;
+        font-size: 1rem;
+    }
+
+    .home-part-2{
+        width: 100%;
+    }
+}
